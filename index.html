@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Mehrwertsteuer</title>
+    <title>Mehrwertsteuer-Rechner</title>
 </head>
 
 <body>
@@ -16,22 +16,28 @@
 
     <main>
         <h2>Was soll berechnet werden?</h2>
-        <input type="radio" name="" value="" id="brutto">
-        <label for="html"> Von Netto zu Brutto</label><br>
-        <input type="radio" name="" value="" id="netto">
-        <label for="html">Von Brutto zu Netto </label><br>
+        <form>
+            <input type="radio" name="choice" checked="checked" value="" id="brutto">
+            <label> Von Netto zu Brutto</label><br>
+            <input type="radio" name="choice" value="" id="netto">
+            <label>Von Brutto zu Netto </label><br>
+        </form>
         <!-- linebreak -->
         <hr>
+
         <h3>Mehrwertsteuersatz</h3>
-        <input type="radio" name="" value="" id="satz1">
-        <label for="html"> 19%</label>
-        <input type="radio" name="" value="" id="satz1">
-        <label for="html">7% </label><br>
+        <form>
+            <input type="radio" name="taxrate" value="" id="satz1" checked="checked">
+            <label> 19%</label>
+            <input type="radio" name="taxrate" value="" id="satz2">
+            <label>7% </label><br>
+        </form>
         <!-- linebreak -->
         <hr>
         <h3> Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</h3>
-        <input type="text" name="" value="" id="">
+        <input type="text" name="" value="" id="betrag">
         <input type="button" name="" value="Berechnen" onclick="check()">
+
     </main>
     <p>Ergebnis</p>
     <footer>
